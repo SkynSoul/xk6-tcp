@@ -12,7 +12,7 @@ client.on('error', (err) => {
 })
 client.on('data', (data) => {
     console.log('-------this is data-----------');
-    console.log(Buffer.from(data).toString());
+    console.log(data);
 })
 client.connect(opts);
 
